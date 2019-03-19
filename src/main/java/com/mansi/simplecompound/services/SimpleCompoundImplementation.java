@@ -15,10 +15,8 @@ public class SimpleCompoundImplementation implements SimpleCompoundServices {
 	*/
 	@Override
 	public double compoundinterest(double principle, double rate, int n) {
-		double amountresult = 0.0;
 		double compoundinterestresult = 0.0;
-		amountresult = principle * Math.pow((1 + rate / 100.0), n);
-		compoundinterestresult = amountresult - principle;
+		compoundinterestresult = (principle * Math.pow((1 + rate / 100.0), n)) - principle;
 		return compoundinterestresult;
 	}
 
