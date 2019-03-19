@@ -55,7 +55,7 @@ public class AppTest
 
 	public void CompoundInterest() {
 
-		assertEquals(44100.0, app.calculation(2), 0.0);
+		assertEquals(4100.0, app.calculation(2), 0.0);
 
 	}
 
